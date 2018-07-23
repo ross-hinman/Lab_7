@@ -43,7 +43,7 @@ namespace Lab_7
         {
             Console.WriteLine("Please enter a valid email: ");
             string email = Console.ReadLine();
-            var pattern = @"^([A-Z|a-z|0-9]{5,30})@([A-Z|a-z|0-9]{5,10}).([A-Z|a-z|0-9]{2,3})$";
+            var pattern = @"^(\w{5,30})@(\w{5,10}).(\w{2,3})$";
             bool checkEmail = true;
             do
             {
@@ -63,7 +63,7 @@ namespace Lab_7
         {
             Console.WriteLine("Please enter a valid phone number (xxx-xxx-xxxx): ");
             string phoneNumber = Console.ReadLine();
-            var pattern = @"^([0-9]{3})-([0-9]{3})-([0-9]{4})$";
+            var pattern = @"^(\d{3})-(\d{3})-(\d{4})$";
             bool checkPhone = true;
 
             do
@@ -84,7 +84,7 @@ namespace Lab_7
         {
             Console.WriteLine("Please enter a valid date (DD/MM/YYYY): ");
             string date = Console.ReadLine();
-            var pattern = @"^([0-9]{2})/([0-9]{2})/([0-9]{4})$";
+            var pattern = @"^(\d{2})/(\d{2})/(\d{4})$";
             bool checkDate = true;
 
             do
